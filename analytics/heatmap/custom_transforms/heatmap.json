@@ -1,0 +1,540 @@
+[
+  {
+      "botconfigs": {
+        "_id": "60d6f462c0b5e843c27d5b4e_2",
+        "description": "Heatmap Description",
+        "botId": "60d6efaa53ab15d77766e064_2",
+        "sopId": "60d6efaa53ab15d77766e06e_2",
+        "activityId": "60d6efaa53ab15d77766e07d_2",
+        "kpisId": "60d6efaa53ab15d77766e08b_2",
+        "siteId": "60d6f23ac0b5e843c27d5b45_2",
+        "nodeId": "60d6f267c0b5e843c27d5b47_2",
+        "sensorId": "123_2",
+        "inspectScheduleId": "60d978eaf8a62c192c153514_2",
+        "botStatus": 1,
+        "progressIndex": 75,
+        "createdBy": "60d6efbb5d9551410ecfd549_2",
+        "modifiedBy": "60d6efbb5d9551410ecfd549_2",
+        "isActive": false,
+        "__v": 0,
+        "createdAt": "2021-06-26T09:33:22.063Z",
+        "updatedAt": "2021-07-02T13:04:34.902Z"
+      },
+      "sites": {
+        "_id": "60d6f23ac0b5e843c27d5b45_2",
+        "location": {
+          "type": "Point",
+         
+          "coordinates": [37.39856, -121.94866]
+        },
+        "regionId": "60d6f212c0b5e843c27d5b41_2",
+        "areaId": "60d6f229c0b5e843c27d5b43_2",
+        "isActive": true,
+        "name": "siteOne",
+        "email": "",
+        "contactPerson": "",
+        "mobile": null,
+        "countryCode": 91,
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "createdAt": "2021-06-26T09:24:10.621Z",
+        "updatedAt": "2021-06-26T09:24:10.621Z",
+        "__v": 0
+      },
+      "nodes": {
+        "_id": "60d6f267c0b5e843c27d5b47_2",
+        "location": {
+          "type": "Point",
+    
+          "coordinates":[37.39856, -121.94866]
+        },
+        "isActive": true,
+        "name": "nodeOne",
+        "ip": "192.168.1.78",
+        "port": 80,
+        "siteId": "60d6f23ac0b5e843c27d5b45_2",
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "createdAt": "2021-06-26T09:24:55.908Z",
+        "updatedAt": "2021-06-26T09:24:55.908Z",
+        "__v": 0
+      },
+      "sensors": {
+        "_id": "123_2",
+        "channelId": null,
+        "rtspUrl": "rtsp://admin:Aivid2020@192.168.1.12:554/media/video1",
+        "videoUrl": null,
+        "startTime":null,
+        "name": "sensorOne",
+        "deviceId": "60d6f312c0b5e843c27d5b48_2",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:27:46.448Z",
+        "updatedAt": "2021-06-26T09:27:46.448Z"
+      },
+      "devices": {
+        "_id": "60d6f312c0b5e843c27d5b48_2",
+        "location": {
+          "coordinates":[37.39856, -121.94866],
+          "type": "Point"
+        },
+        "mode": 1,
+        "type": 1,
+        "videoChannels": null,
+        "activeChannel": null,
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "mac": "48:ea:63:a7:ab:24",
+        "modelNumber": "IPC314SR-DVPF28",
+        "siteId": "60d6f23ac0b5e843c27d5b45_2",
+        "nodeId": "60d6f267c0b5e843c27d5b47_2",
+        "ip": "192.168.1.12",
+        "httpPort": 80,
+        "rtspPort": 554,
+        "userName": "admin",
+        "password": "Aivid2020",
+        "isActive": true,
+        "name": "sensorOne",
+        "createdAt": "2021-06-26T09:27:46.422Z",
+        "updatedAt": "2021-06-26T09:27:46.422Z",
+        "__v": 0
+      },
+      "activities": {
+        "_id": "60d6efaa53ab15d77766e07d_2",
+        "uniqueName": "PPL-DENSITY-HEAT-MAP",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:13:14.453Z",
+        "name": "People Density Detection",
+        "sopId": "60d6efaa53ab15d77766e06e_2",
+        "updatedAt": "2021-07-06T03:46:08.186Z"
+      },
+      "kpis": {
+        "_id": "60d6efaa53ab15d77766e08b_2",
+        "name": "People Density Measurement",
+        "__v": 0,
+        "activityId": "60d6efaa53ab15d77766e07d_2",
+        "aividBotId": "60d6efaa53ab15d77766e064_2",
+        "botName": "People Density Detection",
+        "createdAt": "2021-06-26T09:13:14.489Z",
+        "description": "Want to know People Density at different areas.",
+        "stage": [
+          {
+            "inspectionDetails": true,
+            "inspectionArea": true,
+            "notifications": false,
+            "visionInsights": true
+          }
+        ],
+        "updatedAt": "2021-07-06T03:46:08.200Z",
+        "version": "Bot-1.0.0",
+        "visionInsightsTags": [
+          "INSIGHT NAME",
+          "GENERATED ON",
+          "CHECKLIST",
+          "ACTIVITY",
+          "AIVID BOT"
+        ]
+      },
+      "aividbots": {
+        "_id": "60d6efaa53ab15d77766e064_2",
+        "uniqueName": "PPL-DENSITY-DET",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:13:14.391Z",
+        "image": "aividtech/smtc_analytics_heatmap_xeon_gst:latest",
+        "name": "heatmap",
+        "updatedAt": "2021-07-06T03:46:08.140Z"
+      },
+      "zones": [
+        {
+          "_id": "60deff58a996fc77fa0578a5_2",
+          "sensorId": "123_2",
+          "nodeId": "60d6f267c0b5e843c27d5b47_2",
+          "coordinates": [
+            {
+                "coordinate": [
+                   368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba13",
+                "name": null,
+                "position": 2
+            },
+            {
+                "coordinate": [
+                 368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba14",
+                "name": null,
+                "position": 2
+            }
+        ],
+          "type": 1,
+          "botConfigId": "60d6f462c0b5e843c27d5b4e_2",
+          "name": "Zone3",
+          "__v": 0,
+          "createdAt": "2021-06-26T09:34:58.985Z",
+          "updatedAt": "2021-06-26T09:34:58.985Z"
+        },
+        {
+          "_id": "60deff58a996fc77fa0578a5_2_1",
+          "sensorId": "123_2",
+          "nodeId": "60d6f267c0b5e843c27d5b47_2",
+          "coordinates": [
+            {
+                "coordinate": [
+                   368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba13",
+                "name": null,
+                "position": 2
+            },
+            {
+                "coordinate": [
+                  368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba14",
+                "name": null,
+                "position": 2
+            }
+        ],
+          "type": 1,
+          "botConfigId": "60d6f462c0b5e843c27d5b4e_2",
+          "name": "Zone4",
+          "__v": 0,
+          "createdAt": "2021-06-26T09:34:58.985Z",
+          "updatedAt": "2021-06-26T09:34:58.985Z"
+        }
+      ],
+      "schedules": [
+        {
+          "_id": "60d978eaf8a62c192c153515_2",
+          "type": 1,
+          "day": 1,
+          "startHour": 9,
+          "startMin": 30,
+          "endHour": 17,
+          "endMin": 30,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.337Z",
+          "updatedAt": "2021-06-28T07:23:22.337Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153516_2",
+          "type": 1,
+          "day": 0,
+          "startHour": 0,
+          "startMin": 0,
+          "endHour": 23,
+          "endMin": 59,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.339Z",
+          "updatedAt": "2021-06-28T07:23:22.339Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153517_2",
+          "type": 1,
+          "day": 2,
+          "startHour": 9,
+          "startMin": 0,
+          "endHour": 10,
+          "endMin": 0,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.339Z",
+          "updatedAt": "2021-06-28T07:23:22.339Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153518_2",
+          "type": 1,
+          "day": 3,
+          "startHour": 13,
+          "startMin": 0,
+          "endHour": 14,
+          "endMin": 0,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.340Z",
+          "updatedAt": "2021-06-28T07:23:22.340Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153519_2",
+          "type": 1,
+          "day": 4,
+          "startHour": 0,
+          "startMin": 0,
+          "endHour": 9,
+          "endMin": 30,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.340Z",
+          "updatedAt": "2021-06-28T07:23:22.340Z"
+        }
+      ]
+    },
+   {
+      "botconfigs": {
+        "_id": "60d6f462c0b5e843c27d5b4e_2_2",
+        "description": "Heatmap Description",
+        "botId": "60d6efaa53ab15d77766e064_2_2",
+        "sopId": "60d6efaa53ab15d77766e06e_2_2",
+        "activityId": "60d6efaa53ab15d77766e07d_2_2",
+        "kpisId": "60d6efaa53ab15d77766e08b_2_2",
+        "siteId": "60d6f23ac0b5e843c27d5b45_2_2",
+        "nodeId": "60d6f267c0b5e843c27d5b47_2_2",
+        "sensorId": "123_2_2",
+        "inspectScheduleId": "60d978eaf8a62c192c153514_2_2",
+        "botStatus": 1,
+        "progressIndex": 75,
+        "createdBy": "60d6efbb5d9551410ecfd549_2_2",
+        "modifiedBy": "60d6efbb5d9551410ecfd549_2_2",
+        "isActive": false,
+        "__v": 0,
+        "createdAt": "2021-06-26T09:33:22.063Z",
+        "updatedAt": "2021-07-02T13:04:34.902Z"
+      },
+      "sites": {
+        "_id": "60d6f23ac0b5e843c27d5b45_2_2",
+        "location": {
+          "type": "Point",
+         
+          "coordinates": [37.39856, -121.94866]
+        },
+        "regionId": "60d6f212c0b5e843c27d5b41_2_2",
+        "areaId": "60d6f229c0b5e843c27d5b43_2_2",
+        "isActive": true,
+        "name": "siteOne",
+        "email": "",
+        "contactPerson": "",
+        "mobile": null,
+        "countryCode": 91,
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "createdAt": "2021-06-26T09:24:10.621Z",
+        "updatedAt": "2021-06-26T09:24:10.621Z",
+        "__v": 0
+      },
+      "nodes": {
+        "_id": "60d6f267c0b5e843c27d5b47_2_2",
+        "location": {
+          "type": "Point",
+    
+          "coordinates":[37.39856, -121.94866]
+        },
+        "isActive": true,
+        "name": "nodeOne",
+        "ip": "192.168.1.78",
+        "port": 80,
+        "siteId": "60d6f23ac0b5e843c27d5b45_2_2",
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "createdAt": "2021-06-26T09:24:55.908Z",
+        "updatedAt": "2021-06-26T09:24:55.908Z",
+        "__v": 0
+      },
+      "sensors": {
+        "_id": "123_2_2",
+        "channelId": null,
+        "rtspUrl": "rtsp://192.168.1.38/simulation1.mp4",
+        "videoUrl": null,
+        "startTime":1627996651000,
+        "name": "sensorOne",
+        "deviceId": "60d6f312c0b5e843c27d5b48_2_2",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:27:46.448Z",
+        "updatedAt": "2021-06-26T09:27:46.448Z"
+      },
+      "devices": {
+        "_id": "60d6f312c0b5e843c27d5b48_2_2",
+        "location": {
+          "coordinates":[37.39856, -121.94866],
+          "type": "Point"
+        },
+        "mode": 1,
+        "type": 2,
+        "videoChannels": null,
+        "activeChannel": null,
+        "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+        "mac": "48:ea:63:a7:ab:24",
+        "modelNumber": "IPC314SR-DVPF28",
+        "siteId": "60d6f23ac0b5e843c27d5b45_2",
+        "nodeId": "60d6f267c0b5e843c27d5b47_2",
+        "ip": "192.168.1.12",
+        "httpPort": 80,
+        "rtspPort": 554,
+        "userName": "admin",
+        "password": "Aivid2020",
+        "isActive": true,
+        "name": "sensorOne",
+        "createdAt": "2021-06-26T09:27:46.422Z",
+        "updatedAt": "2021-06-26T09:27:46.422Z",
+        "__v": 0
+      },
+      "activities": {
+        "_id": "60d6efaa53ab15d77766e07d_2_2",
+        "uniqueName": "PPL-DENSITY-HEAT-MAP",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:13:14.453Z",
+        "name": "People Density Detection",
+        "sopId": "60d6efaa53ab15d77766e06e_2_2",
+        "updatedAt": "2021-07-06T03:46:08.186Z"
+      },
+      "kpis": {
+        "_id": "60d6efaa53ab15d77766e08b_2_2",
+        "name": "People Density Measurement",
+        "__v": 0,
+        "activityId": "60d6efaa53ab15d77766e07d_2_2",
+        "aividBotId": "60d6efaa53ab15d77766e064_2_2",
+        "botName": "People Density Detection",
+        "createdAt": "2021-06-26T09:13:14.489Z",
+        "description": "Want to know People Density at different areas.",
+        "stage": [
+          {
+            "inspectionDetails": true,
+            "inspectionArea": true,
+            "notifications": false,
+            "visionInsights": true
+          }
+        ],
+        "updatedAt": "2021-07-06T03:46:08.200Z",
+        "version": "Bot-1.0.0",
+        "visionInsightsTags": [
+          "INSIGHT NAME",
+          "GENERATED ON",
+          "CHECKLIST",
+          "ACTIVITY",
+          "AIVID BOT"
+        ]
+      },
+      "aividbots": {
+        "_id": "60d6efaa53ab15d77766e064_2_2",
+        "uniqueName": "PPL-DENSITY-DET",
+        "__v": 0,
+        "createdAt": "2021-06-26T09:13:14.391Z",
+        "image": "aividtech/smtc_analytics_heatmap_xeon_gst:latest",
+        "name": "heatmap",
+        "updatedAt": "2021-07-06T03:46:08.140Z"
+      },
+      "zones": [
+        {
+          "_id": "60deff58a996fc77fa0578a5_2_2",
+          "sensorId": "123_2_2",
+          "nodeId": "60d6f267c0b5e843c27d5b47_2_2",
+          "coordinates": [
+            {
+                "coordinate": [
+                   368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba13",
+                "name": null,
+                "position": 2
+            },
+            {
+                "coordinate": [
+                 368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba14",
+                "name": null,
+                "position": 2
+            }
+        ],
+          "type": 1,
+          "botConfigId": "60d6f462c0b5e843c27d5b4e_2_2",
+          "name": "Zone5",
+          "__v": 0,
+          "createdAt": "2021-06-26T09:34:58.985Z",
+          "updatedAt": "2021-06-26T09:34:58.985Z"
+        },
+        {
+          "_id": "60deff58a996fc77fa0578a5_2_1_2",
+          "sensorId": "123_2_2",
+          "nodeId": "60d6f267c0b5e843c27d5b47_2_2",
+          "coordinates": [
+            {
+                "coordinate": [
+                   368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba13",
+                "name": null,
+                "position": 2
+            },
+            {
+                "coordinate": [
+                  368,622,1719,1036,1888,304,1134,110,361,615,368,622
+                ],
+                "_id": "61050446c38e0e1aed7aba14",
+                "name": null,
+                "position": 2
+            }
+        ],
+          "type": 1,
+          "botConfigId": "60d6f462c0b5e843c27d5b4e_2_2",
+          "name": "Zone6",
+          "__v": 0,
+          "createdAt": "2021-06-26T09:34:58.985Z",
+          "updatedAt": "2021-06-26T09:34:58.985Z"
+        }
+      ],
+      "schedules": [
+        {
+          "_id": "60d978eaf8a62c192c153515_2",
+          "type": 1,
+          "day": 1,
+          "startHour": 9,
+          "startMin": 30,
+          "endHour": 17,
+          "endMin": 30,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.337Z",
+          "updatedAt": "2021-06-28T07:23:22.337Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153516_2",
+          "type": 1,
+          "day": 0,
+          "startHour": 0,
+          "startMin": 0,
+          "endHour": 23,
+          "endMin": 59,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.339Z",
+          "updatedAt": "2021-06-28T07:23:22.339Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153517_2",
+          "type": 1,
+          "day": 2,
+          "startHour": 9,
+          "startMin": 0,
+          "endHour": 10,
+          "endMin": 0,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.339Z",
+          "updatedAt": "2021-06-28T07:23:22.339Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153518_2",
+          "type": 1,
+          "day": 3,
+          "startHour": 13,
+          "startMin": 0,
+          "endHour": 14,
+          "endMin": 0,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.340Z",
+          "updatedAt": "2021-06-28T07:23:22.340Z"
+        },
+        {
+          "_id": "60d978eaf8a62c192c153519_2",
+          "type": 1,
+          "day": 4,
+          "startHour": 0,
+          "startMin": 0,
+          "endHour": 9,
+          "endMin": 30,
+          "inspectionScheduleId": "60d978eaf8a62c192c153514_2",
+          "__v": 0,
+          "createdAt": "2021-06-28T07:23:22.340Z",
+          "updatedAt": "2021-06-28T07:23:22.340Z"
+        }
+      ]
+    }
+  ]

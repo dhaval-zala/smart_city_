@@ -1,0 +1,36 @@
+{
+	"sensors": [{
+			"url":"rtsp://admin:Aivid2020@192.168.1.11:85/videoMainsc",
+			"camera_id": 0,
+			"roi": [{
+					"roi_box": [1218,128,1078,1142,1594,1142,1536,128,0],
+					"roiname": "Cash_Counter",
+					"siteId":"60c9c1f71e41fd0aecb0c4f9",
+					"checklist":"Workplace_Compliance",
+					"min_people": 1,
+					"score_true": 10,
+					"score_false": 10,
+					"tracking": "centroid",
+					"pro_active_notification": {
+						"send": "true",
+						"snapshot": "false",
+						"exceeding_length": 2,
+						"wait_time": 20
+					},
+					"real_time_notification": {
+						"queue_exceeded": {
+							"send": "true",
+							"snapshot": "false",
+							"exceed_length": 4,
+							"exceeded_time": 20,
+							"wait_time": 30
+						},
+						"queue_normal": {
+							"send": "true",
+							"snapshot": "false"
+						}
+					}
+				}]
+
+		}]
+}

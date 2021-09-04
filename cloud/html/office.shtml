@@ -1,0 +1,43 @@
+<div id="office" class="reveal large" data-reveal>
+
+  <h3></h3>
+
+  <div class="page-office-algorithm-table">
+    <table algorithm-table>
+      <thead>
+        <th>Algorithm</th>
+        <th>Instance</th>
+        <th>Sensor</th>
+        <th>Status</th>
+        <th>Latency (ms)</th>
+        <th>Performance (fps)</th>
+        <th>Skip (frames)</th>
+        <th>CPU (%)</th>
+        <th>Mem (%)</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-office-workload">
+    <canvas></canvas>
+  </div>
+
+  <div class="page-office-service-table">
+    <table service-table>
+      <thead>
+        <th>Name</th>
+        <th>Service</th>
+        <th>Instance</th>
+        <th>Status</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+
+</div>

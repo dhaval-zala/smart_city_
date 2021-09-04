@@ -1,0 +1,97 @@
+{
+	"sensors": [{
+		"url": "rtsp://admin:Aivid2020@192.168.1.11:85/videoMainsc",
+		"camera_id": 0,
+
+		"roi": [{
+				"roi_box": [697, 101, 1039, 122, 1278, 590, 704, 594, 0],
+				"min_people": 1,
+				"score_true": 10,
+				"score_false": -10,
+                "response_true":"queue_nomal",
+                "response_false":"queue_exceed",
+				"tracking": "centroid",
+				"pro_active_notification": {
+					"send": "true",
+					"snapshot": "true",
+					"exceeding_length": 3,
+					"wait_time": 20
+				},
+				"real_time_notification": {
+					"queue_exceeded": {
+						"send": "true",
+						"snapshot": "true",
+						"exceed_length": 4
+					},
+					"exceeded_time":{"send":"true","time":20,"snapshot":"true"},
+					"wait_time": 30,
+					
+					"queue_normal": {
+						"send": "true",
+						"snapshot": "true"
+					}
+				}
+			},
+			{
+				"roi_box": [63, 546, 327, 141, 608, 156, 530, 688, 1],
+				"min_people": 1,
+				"score_true": 10,
+				"score_false": -10,
+                "response_true":"queue_nomal", 
+                "response_false":"queue_exceed",
+				"tracking": "centroid",
+				"pro_active_notification": {
+					"send": "true",
+					"snapshot": "true",
+					"exceeding_length": 3,
+					"wait_time": 20
+				},
+				"real_time_notification": {
+					"queue_exceeded": {
+						"send": "true",
+						"snapshot": "true",
+						"exceed_length": 4,
+						"exceeded_time": {"send":"true","time":20,"snapshot":"true"},
+						"wait_time": 30
+					},
+					"queue_normal": {
+						"send": "true",
+						"snapshot": "true"
+					}
+				}
+			}
+		]
+	}, {
+		"url": "rtsp://admin:Aivid2020@192.168.1.12:85/videoMainsc",
+		"camera_id": 0,
+
+		"roi": [{
+			"roi_box": [825, 739, 1354, 314, 0],
+			"min_people": 1,
+			"score_true": 10,
+			"score_false":-10,
+            "response_true":"queue_nomal",
+            "response_false":"queue_exceed",
+			"tracking": "centroid",
+			"pro_active_notification": {
+				"send": "true",
+				"snapshot": "true",
+				"exceeding_length": 3,
+				"wait_time": 20
+			},
+			"real_time_notification": {
+				"queue_exceeded": {
+					"send": "true",
+					"snapshot": "true",
+					"exceed_length": 4,
+					"exceeded_time":{"send":"true","time":20,"snapshot":"true"},
+					"wait_time": 30
+				},
+				"queue_normal": {
+					"send": "true",
+					"snapshot": "true"
+				}
+			}
+		}]
+	}]
+}

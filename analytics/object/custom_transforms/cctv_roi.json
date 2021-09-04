@@ -1,0 +1,55 @@
+
+{"sensors":[{"url":"rtsp://admin:Aivid2020@192.168.1.11:85/videoMainsc",
+             "camera_id":0,
+             "roi_line":[[364,225,290,444,0],
+                     [918,191,960,387,1]],
+             "roi_box1":[[90,634,316,249,581,242,473,573,0],
+                        [701,607,699,218,691,229,1070,615,1]],
+             "roi_box2":[[118,632,481,701,597,158,345,131,0],
+                        [709,701,1086,692,928,225,696,189,1],[343,179,597,170,483,687,128,621,1]],
+             "roi_box":[[697,101,1039,122,1278,590,704,594,0],
+                            [63,546,327,141,608,156,530,688,1]],
+
+              "roi_box_q":[[567,489,1154,166,1554,383,1019,877,0]],
+
+              
+              "roi":[{"roi_box":[697,101,1039,122,1278,590,704,594,0],
+                    "min_people":1,
+                    "score_true":10,
+                    "score_false":10,
+                    "tracking":"centroid",
+                    "pro_active_notification":{"send":"true","snapshot":"true","exceeding_length":3,"wait_time":20},
+                    "real_time_notification":{"queue_exceeded":{"send":"true","snapshot":"true","exceed_length":4,"exceeded_time":20,"wait_time":30},"queue_normal":{"send":"true","snapshot":"true"}}},
+
+                {"roi_box":[63,546,327,141,608,156,530,688,1],
+                "min_people":1,
+                "score_true":10,
+                "score_false":10,
+                "tracking":"centroid",
+                "pro_active_notification":{"send":"true","snapshot":"true","exceeding_length":3,"wait_time":20},
+                "real_time_notification":{"queue_exceeded":{"send":"true","snapshot":"true","exceed_length":4,"exceeded_time":20,"wait_time":30},"queue_normal":{"send":"true","snapshot":"true"}}}],
+
+              "max_people":[4,3],
+              "min_people":[1,1],
+              "max_distance":[400,400],
+              "method":"distance_from_line",
+              "tracking":"centroid",
+              "redetection_time":"",
+              "time_interval_notification":""
+
+                },
+              {
+              "url":"rtsp://admin:Aivid2020@192.168.1.12:85/videoMainsc",
+              "roi":[[825,739,1354,314,0]],
+              "camera_id":1,
+              "max_people":[4],
+              "min_people":[1],
+              "max_distance":[400],
+              "method":"distance_from_line",
+              "tracking":"centroid",
+              "time_slot":"",
+              "redetection_time":"",
+              "time_interval_notification":""
+              }
+              ]}
+              

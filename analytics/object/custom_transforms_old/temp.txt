@@ -1,0 +1,41 @@
+{'objects': 
+    [{'detection': 
+        {'bounding_box': 
+            {'x_max': 0.515550971031189, 'x_min': 0.46446529030799866, 'y_max': 0.930193305015564, 'y_min': 0.834352970123291}, 
+            'confidence': 0.9773868322372437, 'label': 'vehicle', 'label_id': 2}, 
+            'h': 69, 'roi_type': 'vehicle', 'w': 65, 'x': 595, 'y': 601}, 
+    {'detection':
+        {'bounding_box':
+            {'x_max': 0.4382355809211731, 'x_min': 0.3882002830505371, 'y_max': 0.9160183072090149, 'y_min': 0.8086606860160828}, 
+            'confidence': 0.912194013595581, 'label': 'vehicle', 'label_id': 2}, 
+        'h': 77, 'roi_type': 'vehicle', 'w': 64, 'x': 497, 'y': 582}, 
+    {'detection': 
+        {'bounding_box': 
+            {'x_max': 0.6045413017272949, 'x_min': 0.5632801055908203, 'y_max': 0.8701328039169312, 'y_min': 0.7945568561553955}, 
+            'confidence': 0.885466456413269, 'label': 'vehicle', 'label_id': 2}, 
+        'h': 54, 'roi_type': 'vehicle', 'w': 53, 'x': 721, 'y': 572}, 
+    {'detection': 
+        {'bounding_box': 
+            {'x_max': 0.5103000998497009, 'x_min': 0.4472220242023468, 'y_max': 0.9912763833999634, 'y_min': 0.899498701095581}, 
+            'confidence': 0.8663610219955444, 'label': 'vehicle', 'label_id': 2}, 
+        'h': 66, 'roi_type': 'vehicle', 'w': 81, 'x': 572, 'y': 648}], 
+'resolution': {'height': 720, 'width': 1280},
+'source': 'rtsp://10.97.116.132:17000/live.sdp', 
+'tags': 
+    {'algorithm': 'object-detection', 
+        'location': {'lat': 45.544223, 'lon': -122.926128}, 
+        'office': {'lat': 45.539626, 'lon': -122.929569}, 
+        'real_base': 1621070145750428032, 
+        'sensor': 'vwBPb3kBLxtlFUauRGmI'}, 
+    'timestamp': 22386356009}
+
+
+rtsp://10.111.7.207:17030/live.sdp
+
+rtsp://10.111.7.207:17000/live.sdp
+
+"rtsp://10.111.7.207:17020/live.sdp"
+
+"rtsp://10.111.7.207:17010/live.sdp"
+
+rtsp://10.98.42.45:17020/live.sdp

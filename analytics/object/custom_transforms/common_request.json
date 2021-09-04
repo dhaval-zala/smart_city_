@@ -1,0 +1,646 @@
+[
+  {
+    "botconfigs": {
+      "_id": "60d2fd4fbc8b0f3a2cdb2204",
+      "description": "User Queue Length Detection Description",
+      "botId": "60d2f7cdc14b41393f223cf7",
+      "sopId": "60d2f7cdc14b41393f223cfc",
+      "activityId": "60d2f7cdc14b41393f223d03",
+       
+      "kpisId": "60d2f7cdc14b41393f223d16",
+      "siteId": "60d2f8babc8b0f3a2cdb21f2",
+      "nodeId": "60d2f95abc8b0f3a2cdb21fa",
+      "sensorId": "60d2f9a2bc8b0f3a2cdb21fc",
+      "inspectScheduleId": "60d2f7cdc14b41393f223d1d",
+      "samplingRate": 0,
+      "waitTime": 0,
+      "botStatus": 1,
+      "responseTypeId": "60d2f7cdc14b41393f223d08",
+      "ruleId": "60d2fd4fbc8b0f3a2cdb2202",
+      "progressIndex": 100,
+      "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+      "modifiedBy": "60d2f812bc8b0f3a2cdb21ec",
+      "isActive": false,
+      "__v": 0,
+      "createdAt": "2021-06-23T09:22:23.130Z",
+      "updatedAt": "2021-06-23T09:33:02.214Z"
+    },
+    "sites": {
+      "_id": "60d2f8babc8b0f3a2cdb21f2",
+       
+      "location": {
+        "type": "Point",
+        "coordinates": [22.258651999999998, 71.1923805]
+      },
+      "regionId": "60d2f85bbc8b0f3a2cdb21ee",
+      "areaId": "60d2f86dbc8b0f3a2cdb21f0",
+      "isActive": true,
+      "name": "Mehsana-Site-1",
+      "email": "bhavesh@gmail.com",
+      "contactPerson": "BHavesh",
+      "mobile": null,
+      "countryCode": 91,
+      "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+      "createdAt": "2021-06-23T09:02:50.828Z",
+      "updatedAt": "2021-06-23T09:02:50.828Z",
+      "__v": 0
+    },
+    "nodes": {
+      "_id": "60d2f95abc8b0f3a2cdb21fa",
+       
+      "location": {
+        "type": "Point",
+        "coordinates": [22.258651999999998, 71.1923805]
+      },
+      "isActive": true,
+      "name": "Mehsana-node1",
+      "ip": "192.168.1.8",
+      "port": 80,
+      "siteId": "60d2f8babc8b0f3a2cdb21f2",
+      "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+      "createdAt": "2021-06-23T09:05:30.289Z",
+      "updatedAt": "2021-06-23T09:05:30.289Z",
+      "__v": 0
+    },
+    "sensors": {
+      "_id": "60d2f9a2bc8b0f3a2cdb21fc",
+      "channelId": null,
+      "rtspUrl": "rtsp://admin:Aivid2020@192.168.1.11:554/media/video1",
+      "videoUrl": null,
+      "name": "Mehsana-sensor-1",
+      "deviceId": "60d2f9a2bc8b0f3a2cdb21fb",
+      "__v": 0,
+      "createdAt": "2021-06-23T09:06:42.293Z",
+      "updatedAt": "2021-06-23T09:06:42.293Z"
+    },
+    "rules": {
+      "_id": "60d2fd4fbc8b0f3a2cdb2202",
+       
+      "activityId": "609243d3a79d3a2c68012ac2",
+      "operator": null,
+      "key": "AllowedQueueLength",
+      "value": "10",
+      "type": "activityrule",
+      "createdAt": "2021-06-23T09:22:23.119Z",
+      "updatedAt": "2021-06-23T09:22:23.119Z",
+      "__v": 0
+    },
+    "responsetypes": {
+      "_id": "60d2f7cdc14b41393f223d08",
+       
+      "systemGen": true,
+      "falseResponse": {
+        "name": "Queue Exceeded",
+        "score": -10,
+        "colorCode": "#B23C3C"
+      },
+      "trueResponse": {
+        "name": "Queue Normal",
+        "score": 10,
+        "colorCode": "#1B6639"
+      },
+      "createdAt": "2021-06-23T08:58:53.575Z",
+      "updatedAt": "2021-06-23T08:58:53.575Z",
+      "__v": 0
+    },
+    "activities": {
+      "_id": "60d2f7cdc14b41393f223d03",
+      "sopId": "60d2f7cdc14b41393f223cfc",
+       
+      "version": 1,
+      "nonNegotiable": false,
+      "modifiedBy": null,
+      "name": "Queue Management",
+      "uniqueName": "QUEUE_LENGTH_LIMITING_&_WAIT_TIME",
+      "__v": 0,
+      "createdAt": "2021-06-23T08:58:53.557Z",
+      "updatedAt": "2021-06-23T08:58:53.557Z"
+    },
+    "kpis": {
+      "_id": "60d2f7cdc14b41393f223d16",
+      "aividBotId": "60d2f7cdc14b41393f223cf7",
+      "activityId": "60d2f7cdc14b41393f223d03",
+      "version": "Bot_1.0.0",
+      "stage": [
+        {
+          "inspectionDetails": true,
+          "inspectionArea": true,
+          "notifications": true,
+          "visionInsights": true
+        }
+      ],
+      "possibleResponse": [true, false],
+      "defaultResponseTypeId": "60d2f7cdc14b41393f223d08",
+      "typeOfNotifications": [
+        {
+          "proActive": true,
+          "realTime": true
+        }
+      ],
+      "notificationMode": [
+        {
+          "email": {
+            "status": true,
+            "snapshot": true
+          },
+          "whatsapp": {
+            "status": true,
+            "snapshot": true
+          }
+        }
+      ],
+      "notificationTags": [
+        "CHECKLIST NAME",
+        "ACTIVITY NAME",
+        "AIVID BOT NAME",
+        "EVENT DATE & TIME",
+        "REGION NAME",
+        "AREA NAME",
+        "NODE NAME",
+        "SENSOR NAME",
+        "COUNTER NAME",
+        "RESPONSE",
+        "SCORE",
+        "TOTAL IN COUNT",
+        "TOTAL OUT COUNT",
+        "QUEUE LENGTH",
+        "QUEUE STATUS",
+        "SITE NAME"
+      ],
+      
+      "rules": [
+        {
+          "key": "AllowedQueueLength",
+          "value": "10",
+          "operator": "equal to",
+          "type": "activityrule"
+        },
+        {
+          "key": "NotifyingQueueLength",
+          "value": "8",
+          "operator": "equal to",
+          "type": "pro-active"
+        },
+        {
+          "key": "LimitForQueueExceeded",
+          "value": "10",
+          "operator": "equal to",
+          "type": "realtime"
+        },
+        {
+          "key": "LimitForQueueNormal",
+          "value": "10",
+          "operator": "equal to",
+          "type": "realtime"
+        }
+      ],
+      "visionInsightsTags": [
+        "INSIGHT NAME",
+        "GENERATED ON",
+        "CHECKLIST",
+        "ACTIVITY",
+        "AIVID BOT"
+      ],
+      "name": "Queue Length Detection",
+      "botName": "Queue Management",
+      "__v": 0,
+      "createdAt": "2021-06-23T08:58:53.611Z",
+      "updatedAt": "2021-06-23T08:58:53.611Z",
+      "description": "Test"
+    },
+    "aividbots": {
+      "_id": "60d6efaa53ab15d77766e064",
+      "uniqueName": "QUEUE-MGMT",
+      "__v": 0,
+      "createdAt": "2021-06-26T09:13:14.391Z",
+      "image": "aividtech/smtc_analytics_queue_xeon_gst:latest",
+      "name": "Queue Management",
+      "updatedAt": "2021-06-26T09:13:14.391Z"
+    },
+    "zones": [
+      {
+        "_id": "60d2fe5bbc8b0f3a2cdb2206",
+         
+        "sensorId": "60d2f9a2bc8b0f3a2cdb21fc",
+        "nodeId": "60d2f95abc8b0f3a2cdb21fa",
+        "coordinate": ["385", "138", "83", "22"],
+        "type": 1,
+        "botConfigId": "60d2fd4fbc8b0f3a2cdb2204",
+        "name": "Zone1",
+        "__v": 0,
+        "createdAt": "2021-06-23T09:26:51.303Z",
+        "updatedAt": "2021-06-23T09:26:51.303Z"
+      }
+    ],
+    "notifications": [
+      {
+        "notificationconfigs": {
+          "_id": "60d2ff53bc8b0f3a2cdb220b",
+          "type": 1,
+          "ruleId": "60d2ff53bc8b0f3a2cdb2209",
+           
+          "notificationMedium": 2,
+          "responseTypeId": "60d2f7cdc14b41393f223d08",
+          "attachedClip": false,
+          "attachedSnap": false,
+          "isSourceCamera": false,
+          "lockClip": false,
+          "isResend": true,
+          "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+          "modifiedBy": null,
+          "isActive": true,
+          "botConfigId": "60d2fd4fbc8b0f3a2cdb2204",
+          "templateId": "60d2ff0ebc8b0f3a2cdb2208",
+          "isResponseType": false,
+          "resendInterval": 10,
+          "__v": 0,
+          "createdAt": "2021-06-23T09:30:59.941Z",
+          "updatedAt": "2021-06-23T09:30:59.941Z"
+        },
+        "responsetypes": {
+          "_id": "60d2f7cdc14b41393f223d08",
+           
+          "systemGen": true,
+          "falseResponse": {
+            "name": "Queue Exceeded",
+            "score": -10,
+            "colorCode": "#B23C3C"
+          },
+          "trueResponse": {
+            "name": "Queue Normal",
+            "score": 10,
+            "colorCode": "#1B6639"
+          },
+          "createdAt": "2021-06-23T08:58:53.575Z",
+          "updatedAt": "2021-06-23T08:58:53.575Z",
+          "__v": 0
+        },
+        "templates": {
+          "_id": "60d2ff0ebc8b0f3a2cdb2208",
+           
+          "email": {
+            "to": ["bhavesh@gmail.com"],
+            "bcc": [],
+            "cc": ["bhavesh@gmail.com"],
+            "subject": "Sub",
+            "message": "Hi, test"
+          },
+          "whatsApp": {
+            "to": []
+          },
+          "voice": {
+            "to": []
+          },
+          "type": "EMAIL",
+          "isActive": false,
+          "name": "email tem",
+          "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+          "createdAt": "2021-06-23T09:29:50.927Z",
+          "updatedAt": "2021-06-23T09:29:50.927Z",
+          "__v": 0
+        },
+        "rules": {
+          "_id": "60d2ff53bc8b0f3a2cdb2209",
+           
+          "activityId": "609243d3a79d3a2c68012ac2",
+          "operator": null,
+          "key": "LimitForQueueExceeded",
+          "value": "10",
+          "type": "realtime",
+          "createdAt": "2021-06-23T09:30:59.938Z",
+          "updatedAt": "2021-06-23T09:30:59.938Z",
+          "__v": 0
+        }
+      }
+    ]
+  },
+  {
+    "botconfigs": {
+      "_id": "60d2fd4fbc8b0f3a2cdb2205",
+      "description": "User Queue Length Detection Description",
+      "botId": "60d2f7cdc14b41393f223cf7",
+      "sopId": "60d2f7cdc14b41393f223cfc",
+      "activityId": "60d2f7cdc14b41393f223d03",
+      "kpisId": "60d2f7cdc14b41393f223d16",
+      "siteId": "60d2f93bbc8b0f3a2cdb21f8",
+      "nodeId": "60d2f9dfbc8b0f3a2cdb21ff",
+      "sensorId": "60d2f9fdbc8b0f3a2cdb2201",
+       
+      "inspectScheduleId": "60d2f7cdc14b41393f223d1d",
+      "samplingRate": 0,
+      "waitTime": 0,
+      "botStatus": 1,
+      "responseTypeId": "60d2f7cdc14b41393f223d08",
+      "ruleId": "60d2fd4fbc8b0f3a2cdb2202",
+      "progressIndex": 100,
+      "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+      "modifiedBy": "60d2f812bc8b0f3a2cdb21ec",
+      "isActive": false,
+      "__v": 0,
+      "createdAt": "2021-06-23T09:22:23.130Z",
+      "updatedAt": "2021-06-23T09:33:02.214Z"
+    },
+    "sites": {
+      "_id": "60d2f93bbc8b0f3a2cdb21f8",
+      "location": {
+        "type": "Point",
+        "coordinates": [22.258651999999998, 71.1923805]
+      },
+      "regionId": "60d2f90ebc8b0f3a2cdb21f4",
+       
+      "areaId": "60d2f937bc8b0f3a2cdb21f6",
+      "isActive": true,
+      "name": "Rajkot-Site-1",
+      "email": "rajkot@site.com",
+      "contactPerson": "Rajkot",
+      "mobile": null,
+      "countryCode": 91,
+      "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+      "createdAt": "2021-06-23T09:04:59.306Z",
+      "updatedAt": "2021-06-23T09:04:59.306Z",
+      "__v": 0
+    },
+    "nodes": {
+      "_id": "60d2f9dfbc8b0f3a2cdb21ff",
+       
+      "location": {
+        "type": "Point",
+        "coordinates": [22.258651999999998, 71.1923805]
+      },
+      "isActive": true,
+      "name": "rajkot-node-1",
+      "ip": "192.168.1.36",
+      "port": 80,
+      "siteId": "60d2f93bbc8b0f3a2cdb21f8",
+      "address": "jogishvari, Jogeshwari Rd, Chamunda Colony, Amraiwadi, Ahmedabad, Gujarat 380026, India",
+      "createdAt": "2021-06-23T09:07:43.707Z",
+      "updatedAt": "2021-06-23T09:07:43.707Z",
+      "__v": 0
+    },
+    "sensors": {
+      "_id": "60d2f9fdbc8b0f3a2cdb2201",
+       
+      "channelId": null,
+      "rtspUrl": "rtsp://admin:Aivid2020@192.168.1.11:554/media/video1",
+      "videoUrl": null,
+      "name": "rajkot-sensor-1",
+      "deviceId": "60d2f9fdbc8b0f3a2cdb2200",
+      "__v": 0,
+      "createdAt": "2021-06-23T09:08:13.825Z",
+      "updatedAt": "2021-06-23T09:08:13.825Z"
+    },
+    "rules": {
+      "_id": "60d2fd4fbc8b0f3a2cdb2202",
+       
+      "activityId": "609243d3a79d3a2c68012ac2",
+      "operator": null,
+      "key": "AllowedQueueLength",
+      "value": "10",
+      "type": "activityrule",
+      "createdAt": "2021-06-23T09:22:23.119Z",
+      "updatedAt": "2021-06-23T09:22:23.119Z",
+      "__v": 0
+    },
+    "responsetypes": {
+      "_id": "60d2f7cdc14b41393f223d08",
+       
+      "systemGen": true,
+      "falseResponse": {
+        "name": "Queue Exceeded",
+        "score": -10,
+        "colorCode": "#B23C3C"
+      },
+      "trueResponse": {
+        "name": "Queue Normal",
+        "score": 10,
+        "colorCode": "#1B6639"
+      },
+      "createdAt": "2021-06-23T08:58:53.575Z",
+      "updatedAt": "2021-06-23T08:58:53.575Z",
+      "__v": 0
+    },
+    "activities": {
+      "_id": "60d2f7cdc14b41393f223d03",
+       
+      "sopId": "60d2f7cdc14b41393f223cfc",
+      "version": 1,
+      "nonNegotiable": false,
+      "modifiedBy": null,
+      "name": "Queue Management",
+      "uniqueName": "QUEUE_LENGTH_LIMITING_&_WAIT_TIME",
+      "__v": 0,
+      "createdAt": "2021-06-23T08:58:53.557Z",
+      "updatedAt": "2021-06-23T08:58:53.557Z"
+    },
+    "kpis": {
+      "_id": "60d2f7cdc14b41393f223d16",
+      
+      "aividBotId": "60d2f7cdc14b41393f223cf7",
+      "activityId": "60d2f7cdc14b41393f223d03",
+      "version": "Bot_1.0.0",
+      "stage": [
+        {
+          "inspectionDetails": true,
+          "inspectionArea": true,
+          "notifications": true,
+          "visionInsights": true
+        }
+      ],
+      "possibleResponse": [true, false],
+      "defaultResponseTypeId": "60d2f7cdc14b41393f223d08",
+      "typeOfNotifications": [
+        {
+          "proActive": true,
+          "realTime": true
+        }
+      ],
+      "notificationMode": [
+        {
+          "email": {
+            "status": true,
+            "snapshot": true
+          },
+          "whatsapp": {
+            "status": true,
+            "snapshot": true
+          }
+        }
+      ],
+      "notificationTags": [
+        "CHECKLIST NAME",
+        "ACTIVITY NAME",
+        "AIVID BOT NAME",
+        "EVENT DATE & TIME",
+        "REGION NAME",
+        "AREA NAME",
+        "NODE NAME",
+        "SENSOR NAME",
+        "COUNTER NAME",
+        "RESPONSE",
+        "SCORE",
+        "TOTAL IN COUNT",
+        "TOTAL OUT COUNT",
+        "QUEUE LENGTH",
+        "QUEUE STATUS",
+        "SITE NAME"
+      ],
+      "rules": [
+        {
+          "key": "AllowedQueueLength",
+          "value": "10",
+          "operator": "equal to",
+          "type": "activityrule"
+        },
+        {
+          "key": "NotifyingQueueLength",
+          "value": "8",
+          "operator": "equal to",
+          "type": "pro-active"
+        },
+        {
+          "key": "LimitForQueueExceeded",
+          "value": "10",
+          "operator": "equal to",
+          "type": "realtime"
+        },
+        {
+          "key": "LimitForQueueNormal",
+          "value": "10",
+          "operator": "equal to",
+          "type": "realtime"
+        }
+      ],
+      "visionInsightsTags": [
+        "INSIGHT NAME",
+        "GENERATED ON",
+        "CHECKLIST",
+        "ACTIVITY",
+        "AIVID BOT"
+      ],
+      "name": "Queue Length Detection",
+      "botName": "Queue Management",
+      "__v": 0,
+      "createdAt": "2021-06-23T08:58:53.611Z",
+      "updatedAt": "2021-06-23T08:58:53.611Z",
+      "description": "Test"
+    },
+    "aividbots": {
+      "_id": "60d6efaa53ab15d77766e064",
+      "uniqueName": "QUEUE-MGMT",
+      "__v": 0,
+      "createdAt": "2021-06-26T09:13:14.391Z",
+      "image": "aividtech/smtc_analytics_queue_xeon_gst:latest",
+      "name": "Queue Management",
+      "updatedAt": "2021-06-26T09:13:14.391Z"
+    },
+    "zones": [
+      {
+        "_id": "60d2fe5bbc8b0f3a2cdb2207",
+        "sensorId": "60d2f9fdbc8b0f3a2cdb2201",
+         
+        "nodeId": "60d2f9dfbc8b0f3a2cdb21ff",
+        "coordinate": ["385", "138", "83", "22"],
+        "type": 1,
+        "botConfigId": "60d2fd4fbc8b0f3a2cdb2205",
+        "name": "Zone2",
+        "__v": 0,
+        "createdAt": "2021-06-23T09:26:51.303Z",
+        "updatedAt": "2021-06-23T09:26:51.303Z"
+      },
+      {
+        "_id": "60d2fe5bbc568b0f3a2cdb2207",
+        "sensorId": "60d2f9fdbc8b0f3a2cdb2201",
+         
+        "nodeId": "60d2f9dfbc8b0f3a2cdb21ff",
+        "coordinate": ["385", "138", "83", "22"],
+        "type": 1,
+        "botConfigId": "60d2fd4fbc8b0f3a2cdb2205",
+        "name": "Zone2",
+        "__v": 0,
+        "createdAt": "2021-06-23T09:26:51.303Z",
+        "updatedAt": "2021-06-23T09:26:51.303Z"
+      }
+    ],
+    "notifications": [
+      {
+        "notificationconfigs": {
+          "_id": "60d2ff53bc8b0f3a2cdb220c",
+          "type": 1,
+          "ruleId": "60d2ff53bc8b0f3a2cdb2209",
+          "notificationMedium": 2,
+          "responseTypeId": "60d2f7cdc14b41393f223d08",
+           
+          "attachedClip": false,
+          "attachedSnap": false,
+          "isSourceCamera": false,
+          "lockClip": false,
+          "isResend": true,
+          "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+          "modifiedBy": null,
+          "isActive": true,
+          "botConfigId": "60d2fd4fbc8b0f3a2cdb2205",
+          "templateId": "60d2ff0ebc8b0f3a2cdb2208",
+          "isResponseType": false,
+          "resendInterval": 10,
+          "__v": 0,
+          "createdAt": "2021-06-23T09:30:59.941Z",
+          "updatedAt": "2021-06-23T09:30:59.941Z"
+        },
+        "responsetypes": {
+          "_id": "60d2f7cdc14b41393f223d08",
+           
+          "systemGen": true,
+          "falseResponse": {
+            "name": "Queue Exceeded",
+            "score": -10,
+            "colorCode": "#B23C3C"
+          },
+          "trueResponse": {
+            "name": "Queue Normal",
+            "score": 10,
+            "colorCode": "#1B6639"
+          },
+          "createdAt": "2021-06-23T08:58:53.575Z",
+          "updatedAt": "2021-06-23T08:58:53.575Z",
+          "__v": 0
+        },
+        "templates": {
+          "_id": "60d2ff0ebc8b0f3a2cdb2208",
+           
+          "email": {
+            "to": ["bhavesh@gmail.com"],
+            "bcc": [],
+            "cc": ["bhavesh@gmail.com"],
+            "subject": "Sub",
+            "message": "Hi, test"
+          },
+          "whatsApp": {
+            "to": []
+          },
+          "voice": {
+            "to": []
+          },
+          "type": "EMAIL",
+          "isActive": false,
+          "name": "email tem",
+          "createdBy": "60d2f812bc8b0f3a2cdb21ec",
+          "createdAt": "2021-06-23T09:29:50.927Z",
+          "updatedAt": "2021-06-23T09:29:50.927Z",
+          "__v": 0
+        },
+        "rules": {
+          "_id": "60d2ff53bc8b0f3a2cdb2209",
+           
+          "activityId": "609243d3a79d3a2c68012ac2",
+          "operator": null,
+          "key": "LimitForQueueExceeded",
+          "value": "10",
+          "type": "realtime",
+          "createdAt": "2021-06-23T09:30:59.938Z",
+          "updatedAt": "2021-06-23T09:30:59.938Z",
+          "__v": 0
+        }
+      }
+    ]
+  }
+]

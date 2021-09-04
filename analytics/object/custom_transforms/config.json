@@ -1,0 +1,81 @@
+{
+    "VisionBot":[{
+        "visionbotID":2,   
+        "eventName":"Queue_Management_exceed_allowed_length", 
+        "eventCode":"EVN002", 
+        "eventId": "d62a7842-2053-4e1b-9ba9-a1dca1ca8f5d",
+       "textMessage":"",
+       "redetection_time":"",
+        "mqtt": {
+            "host": "192.168.1.22",
+            "port":30466
+        },
+        "elasticsearch": {
+            "host": "192.168.1.22:31048"
+        },
+        "roipath":"/home/custom_transforms/cctv_final.json",
+        "imageurl":"http://122.169.112.242/images/img_",
+        "videourl": "http://122.169.112.242/storagevideo/",
+        "json_msg":{"mqttEventName": "NOTIFICATION",
+            "eventName": "AGGRESIVEBEHAVIOR",
+            "notificationType": "TEXT",
+            "eventCode": "EVN001",
+            "eventId": "d62a7842-2053-4e1b-9ba9-a1dca1ca8f5d",
+            "textMessage":"",
+            "cameraID": 1,
+            "roiId":0,
+            "roiName": "Counter",
+            "visionBotName": "Queue Counting",
+            "visionBotId": "1",
+            "timeStamp": "",
+            "date":"",
+            "location": "Office1",
+            "locationId": "1",
+            "orgId": "1",
+            "imagePath":"",
+            "videoPath":"",
+            "visualisations": "none",
+            "analytics": "none"
+            }
+    },
+    {"visionbotID":3,
+    "eventName":"Queue_Management_exceed_wait_time",
+    "eventCode":"EVN003",
+    "eventId": "d62a7842-2053-4e1b-9ba9-a1dca1ca8f5d",
+    "textMessage":"",
+    "redetection_time":"",
+    "mqtt": {
+        "host": "192.168.1.22",
+        "port": 30793
+    },
+    "elasticsearch": {
+        "host": "192.168.1.22:31584"
+    },
+    "roipath":"/home/custom_transforms/queue_wait_roi.json",
+    "imageurl":"http://122.169.112.242/images/img_",
+    "videourl": "http://122.169.112.242/storagevideo/",
+    "json_msg":{"mqttEventName": "NOTIFICATION",
+        "eventName": "AGGRESIVEBEHAVIOR",
+        "notificationType": "TEXT",
+        "eventCode": "EVN001",
+        "eventId": "d62a7842-2053-4e1b-9ba9-a1dca1ca8f5d",
+        "textMessage":"",
+        "cameraID": 1,
+        "roiId":0,
+        "roiName": "Counter",
+        "visionBotName": "Queue Counting",
+        "visionBotId": "1",
+        "timeStamp": "",
+        "date":"",
+        "location": "Office1",
+        "locationId": "1",
+        "orgId": "1",
+        "imagePath":"",
+        "videoPath":"",
+        "visualisations": "none",
+        "analytics": "none"
+        }
+}]
+        
+
+    }

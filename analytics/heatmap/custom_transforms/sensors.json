@@ -1,0 +1,17 @@
+{
+    "sensors":[
+        {   
+            "url": "rtsp://admin:Aivid2020@192.168.1.12:85/videoMainsc",
+            "camera_id": 0,
+            "roi": [[368,622,1719,1036,1888,304,1134,110,361,615,368,622,0]],
+            "fps": 20,
+            "siteId": "60c9c1f71e41fd0aecb0c4f9",
+            "roiName": "OfficeArea",
+            "botName": "CrowdDetection",
+            "checklist": "WRK-COM",
+            "botConfigId": "60d6f462c0b5e843c27d5b4e",
+            "sensorId": "60d6f23ac0b5464d3c27d5b45",
+            "waitTimeThreshold": 10
+        }
+    ]
+}

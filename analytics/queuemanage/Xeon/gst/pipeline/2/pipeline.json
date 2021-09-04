@@ -1,0 +1,40 @@
+{
+	"name": "queuemanage",
+	"version": 2,
+	"type": "GStreamer",
+	"template": "rtspsrc udp-buffer-size=212992 name=\"source\" ! queue ! rtph264depay ! h264parse ! video/x-h264 ! tee name=t ! queue ! decodebin ! videoconvert name=\"videoconvert\" ! video/x-raw,format=BGRx ! queue leaky=upstream ! gvadetect ie-config=CPU_BIND_THREAD=NO model=\"{models[person-detection-retail-0013][1][network]}\" model-proc=\"{models[person-detection-retail-0013][1][proc]}\" name=\"detection\" threshold=0.2  ! queue ! gvametaconvert name=\"metaconvert\" ! gvapython name=\"peoplecounting\" module=\"custom_transforms/final\" class=\"QueueCounting\" ! queue ! gvametapublish name=\"destination\" ! tee name = tt ! queue ! gvawatermark ! videoconvert ! jpegenc ! gvapython name=\"capture\" module=\"custom_transforms/final\" class=\"Capture\" ! queue  ! appsink name=appsink t. ! queue ! splitmuxsink mux=\"mp4mux fragment-duration=1000\" max-size-time=60500000000 name=\"splitmuxsink\"",
+	"description": "queuemanage Pipeline",
+	"parameters": {
+		"type": "object",
+		"properties": {
+			"inference-interval": {
+				"element": "detection",
+				"type": "integer",
+				"minimum": 0,
+				"maximum": 4294967295
+			},
+			"cpu-throughput-streams": {
+				"element": "detection",
+				"type": "string"
+			},
+			"n-threads": {
+				"element": "videoconvert",
+				"type": "integer"
+			},
+			"nireq": {
+				"element": "detection",
+				"type": "integer",
+				"minimum": 1,
+				"maximum": 64
+			},
+			"recording_prefix": {
+				"type": "string",
+				"element": {
+					"name": "splitmuxsink",
+					"property": "location"
+				},
+				"default": "recording"
+			}
+		}
+	}
+}

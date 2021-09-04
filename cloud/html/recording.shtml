@@ -1,0 +1,46 @@
+<div id="pg-recording" class="page hidden">
+
+  <table class="unstriped"><tbody>
+    <tr>
+        <td layout1>
+            <video controls="true" autoplay muted>
+                <source type="video/mp4"/>
+            </video>
+            <div class="page-recording-title"></div>
+            <svg class="page-recording-analytics" xmlns="http://www.w3.org/2000/svg" />
+        </td>
+        <td class="hidden" layout4>
+            <video controls="true" autoplay muted>
+                <source type="video/mp4"/>
+            </video>
+            <div class="page-recording-title"></div>
+        </td>
+        <td class="hidden" layout4>
+            <video controls="true" autoplay muted>
+                <source type="video/mp4"/>
+            </video>
+            <div class="page-recording-title"></div>
+        </td>
+        <td rowspan=2 playlist-section>
+            <table class="unstripped">
+                <tbody play-list></tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="hidden" layout4>
+            <video controls="true" autoplay muted>
+                <source type="video/mp4"/>
+            </video>
+            <div class="page-recording-title"></div>
+        </td>
+        <td class="hidden" layout4>
+            <video controls="true" autoplay muted>
+                <source type="video/mp4"/>
+            </video>
+            <div class="page-recording-title"></div>
+        </td>
+    </tr>
+  </tbody></table>
+
+</div>
